@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XYZ Public School</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+        body { background-color: #f4f6f9; color: #333; }
+        
+        /* Navigation Bar */
+        nav { background: #002147; padding: 15px 5%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; }
+        nav .logo { color: #fff; font-size: 22px; font-weight: bold; }
+        nav ul { list-style: none; display: flex; }
+        nav ul li { margin-left: 20px; }
+        nav ul li a { color: #fff; text-decoration: none; font-weight: 500; transition: 0.3s; }
+        nav ul li a:hover { color: #ffcc00; }
+
+        /* Banner Hero Section */
+        .hero { background: linear-gradient(rgba(0,33,71,0.7), rgba(0,33,71,0.7)), url('https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=1200&q=80') center/cover; height: 70vh; color: white; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 0 20px; }
+        .hero h1 { font-size: 42px; margin-bottom: 10px; }
+        .hero p { font-size: 18px; margin-bottom: 20px; }
+        .btn { background: #ffcc00; color: #002147; padding: 10px 25px; text-decoration: none; font-weight: bold; border-radius: 5px; }
+
+        /* Sections */
+        .container { width: 85%; margin: 40px auto; }
+        .section-title { text-align: center; color: #002147; margin-bottom: 30px; font-size: 28px; }
+        
+        /* Notice & Features Grid */
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .card { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        .card h3 { color: #002147; margin-bottom: 10px; }
+        .card ul { margin-left: 20px; }
+
+        /* Footer */
+        footer { background: #002147; color: white; text-align: center; padding: 20px; margin-top: 40px; }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <nav>
+        <div class="logo">🏫 XYZ Public School</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#notices">Notices</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero" id="home">
+        <h1>Welcome to XYZ Public School</h1>
+        <p>Providing Quality Education for a Better Future</p>
+        <a href="#contact" class="btn">Apply For Admission</a>
+    </div>
+
+    <!-- About Section -->
+    <div class="container" id="about">
+        <h2 class="section-title">About Our School</h2>
+        <div class="card">
+            <p>Welcome to XYZ Public School. We aim to nurture smart, creative, and responsible students. Our campus is equipped with modern labs, smart classrooms, sports grounds, and experienced faculties to ensure holistic development.</p>
+        </div>
+    </div>
+
+    <!-- Notice Board & Facilities -->
+    <div class="container" id="notices">
+        <div class="grid">
+            <div class="card">
+                <h3>📌 Notice Board</h3>
+                <ul>
+                    <li>Admissions open for Session 2026-27</li>
+                    <li>Annual Sports Meet scheduled for next month</li>
+                    <li>Parent-Teacher Meeting (PTM) on Saturday</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>✨ School Facilities</h3>
+                <ul>
+                    <li>Smart Classrooms & Science Labs</li>
+                    <li>Computer Lab with High-Speed Internet</li>
+                    <li>Library & Indoor/Outdoor Sports</li>
+                    <li>Safe Transport / Bus Facility</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="container" id="contact">
+        <h2 class="section-title">Contact Us</h2>
+        <div class="card" style="text-align: center;">
+            <p><strong>📍 Address:</strong> Main Road, City Name, District, State - 123456</p>
+            <p><strong>📞 Phone:</strong> +91 98765 43210</p>
+            <p><strong>✉️ Email:</strong> info@xyzschool.com</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 XYZ Public School. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
